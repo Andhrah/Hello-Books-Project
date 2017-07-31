@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up/Log In</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animate-custom.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body id="registrationpage">
+
+	 <!--This is navigation bar-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<nav class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-image-gallery" aria-expanded="false">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Hello-Books</a>
+			</nav>
+			<div class="collapse navbar-collapse" id="bs-image-gallery">
+				<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="library.html">Library</a></li>
+				<li><a href="#">Categories</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#toregister">Sign Up <i class="fa fa-user-plus"></i></a></li>
+				<li><a href="#tologin">Login <i class="fa fa-user"></i></a></li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id"container">
+		<a class="hiddenanchor" id="toregister"></a>
+		<a class="hiddenanchor" id="tologin"></a>
+		<div id="wrapper">
+			<div id="login" class="animate form">
+				<form>
+					<h1>Log in</h1>
+					<p>
+						<label for="username" class="uname" data-icon="u">Your email or username</label>
+						<input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+					</p>
+					<p>
+						<label for="password" class="youpasswd" data-icon="p"> Your password </label>
+						<input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+					</p>
+					<p class="keeplogin"> 
+						<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+						<label for="loginkeeping">Keep me logged in</label>
+					</p>
+					<p class="login button"> 
+						<input type="submit" value="Login" /> 
+					</p>
+					<p class="change_link">
+						Not a member yet ?
+						<a href="#toregister" class="to_register">Join us</a>
+					</p>
+				</form>
+			</div>
+
+			<div id="register" class="animate form">
+				<form> 
+					<h1> Sign up </h1> 
+					<p> 
+						<label for="usernamesignup" class="uname">Your username</label>
+						<input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="myusername690" />
+					</p>
+					<p> 
+						<label for="emailsignup" class="youmail"> Your email</label>
+						<input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mymail@mail.com"/> 
+					</p>
+					<p> 
+						<label for="passwordsignup" class="youpasswd">Your password </label>
+						<input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+					</p>
+					<p> 
+						<label for="passwordsignup_confirm" class="youpasswd">Please confirm your password </label>
+						<input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+					</p>
+					<p class="signin button"> 
+						<input type="submit" value="Sign up"/> 
+					</p>
+					<p class="change_link">  
+						Already a member ?
+						<a href="#tologin" class="to_register"> Go and log in </a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
